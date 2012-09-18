@@ -1,22 +1,30 @@
-#ifndef COURSE
-#define COURSE
+#ifndef COURSE_H
+#define	COURSE_H
 
+##define DEBUG 0
+#define debug if (DEBUG) cout
+
+#include <string>
+#include <iostream>
+using namespace std;
 
 class Course
 {
 	public:
 		Course();
-
-	private:
+		~Course();
+		Course(const Course & C);
 	
 	protected:
+	
+	private:
 		string name;
-		int ID
+		int ID;
 		int enrollment;
 		string location;
 		string time;
-		Faculty * instructor;
-
+		Faculty * instructor
 };
 
-#endif
+
+#endif COURSE_H

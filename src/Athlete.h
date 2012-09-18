@@ -1,19 +1,27 @@
+#ifndef ATHLETE_H
+#define	ATHLETE_H
 
-#ifndef ATHLETE
-#define ATHLETE
+#define DEBUG 0
+#define debug if (DEBUG) cout
+
+#include <string>
+#include <iostream>
 #include "Student.h"
+using namespace std;
 
 class Athlete : public Student
 {
 	public:
-		Athlete();
-
-	private:
+	Athlete();
+	~Athlete();
+	Athlete(const Athlete & A);
 	
 	protected:
-		string sport;
+	
+	private:
+		string sport; 
 		float scholarship;
-
 };
 
-#endif
+
+#endif ATLETE_H

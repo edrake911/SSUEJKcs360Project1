@@ -1,21 +1,28 @@
+#ifndef SSUPERSON_H
+#define	SSUPERSON_H
 
-#ifndef SSUPERSON
-#define SSUPERSON
+##define DEBUG 0
+#define debug if (DEBUG) cout
+
 #include <string>
+#include <iostream>
 using namespace std;
 
 class SSUPerson
 {
 	public:
 		SSUPerson();
-
-	private:
+		~SSUPerson();
+		SSUPerson(const SSUPerson & P)
+		
 	
 	protected:
-		string name;
-		int ID;
+		string name; 
+		int ID; 
 		string eMail;
-
+	
+	private:
 };
 
-#endif
+
+#endif SSUPERSON_H

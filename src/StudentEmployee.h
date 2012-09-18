@@ -1,17 +1,27 @@
-#ifndef ATHLETE
-#define ATHLETE
-#include "Student.h"
-#include "Employee.h"
-class StudentEmployee: public Student, public Staff
+#ifndef STUDENTEMPLOYEE_H
+#define STUDENTEMPLOYEE_H
+
+##define DEBUG 0
+#define debug if (DEBUG) cout
+
+#include <string>
+#include <iostream>
+#include "Staff.h"
+using namespace std;
+
+class StudentEmployee : public Staff, public Student
 {
 	public:
 		StudentEmployee();
-
-	private:
+		~StudentEmployee();
+		StudentEmployee( const StudentEmployee & S)
+	
 	
 	protected:
+	
+	private:
 		int maxHours;
-
 };
 
-#endif
+
+#endif STUDENTEMPLOYEE_H

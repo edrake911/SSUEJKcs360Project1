@@ -1,18 +1,27 @@
-#ifndef STAFF 
-#define STAFF
-#include "Employee.h"
+#ifndef STAFF_H
+#define STAFF_H
 
-class Staff: public Employee
+##define DEBUG 0
+#define debug if (DEBUG) cout
+
+#include <string>
+#include <iostream>
+#include "Employee.h"
+using namespace std;
+
+class Staff : public Employee
 {
 	public:
 		Staff();
-
-	private:
+		~Staff();
+		Staff(const Staff & S);
 	
 	protected:
-		int hours;
+		int hours; 
 		Employee * supervisor;
-
+	
+	private:
 };
 
-#endif
+
+#endif STAFF_H

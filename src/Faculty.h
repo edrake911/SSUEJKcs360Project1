@@ -1,19 +1,25 @@
-#ifndef FACULTY 
-#define FACULTY
-#include "Employee.h"
+#ifndef FACULTY_H
+#define FACULTY_H
 
-class Faculty : public Employee 
+##define DEBUG 0
+#define debug if (DEBUG) cout
+
+#include <string>
+#include <iostream>
+#include "Employee.h"
+using namespace std;
+
+class Faculty : Public Employee
 {
 	public:
-		Faculty();
-
-	private:
 	
 	protected:
-		bool tenured;
-		float units;
-		vector <Course *> courses;
-
+	
+	private:
+		bool tenured; 
+		float units; 
+		vector <Course *> courses; 
 };
 
-#endif
+
+#endif FACULTY_H
