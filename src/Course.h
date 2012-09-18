@@ -1,13 +1,14 @@
 #ifndef COURSE_H
 #define	COURSE_H
 
-##define DEBUG 0
+#define DEBUG 0
 #define debug if (DEBUG) cout
 
 #include <string>
 #include <iostream>
+#include "Faculty.h"
 using namespace std;
-
+class Faculty;
 class Course
 {
 	public:
@@ -23,8 +24,6 @@ class Course
 		int enrollment;
 		string location;
 		string time;
-		Faculty * instructor
+		Faculty * instructor;
 };
-
-
-#endif COURSE_H
+#endif 

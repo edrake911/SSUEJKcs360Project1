@@ -1,7 +1,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-##define DEBUG 0
+#define DEBUG 0
 #define debug if (DEBUG) cout
 
 #include <string>
@@ -26,4 +26,4 @@ class Employee : virtual public SSUPerson
 };
 
 
-#endif EMPLOYEE_H
+#endif 

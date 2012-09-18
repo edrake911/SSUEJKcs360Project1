@@ -1,7 +1,7 @@
 #ifndef STAFF_H
 #define STAFF_H
 
-##define DEBUG 0
+#define DEBUG 0
 #define debug if (DEBUG) cout
 
 #include <string>
@@ -24,4 +24,4 @@ class Staff : public Employee
 };
 
 
-#endif STAFF_H
+#endif 

@@ -1,3 +1,8 @@
+#include "StudentEmployee.h"
+#include "Athlete.h"
+#include "Faculty.h"
+#include "Course.h"
+
 #include <iostream>
 using namespace std;
 

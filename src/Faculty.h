@@ -1,15 +1,17 @@
 #ifndef FACULTY_H
 #define FACULTY_H
 
-##define DEBUG 0
+#define DEBUG 0
 #define debug if (DEBUG) cout
 
 #include <string>
 #include <iostream>
 #include "Employee.h"
+#include "Course.h"
+#include <vector>
 using namespace std;
-
-class Faculty : Public Employee
+class Course;
+class Faculty : public Employee
 {
 	public:
 	
@@ -22,4 +24,4 @@ class Faculty : Public Employee
 };
 
 
-#endif FACULTY_H
+#endif 

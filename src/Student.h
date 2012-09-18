@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include "SSUPerson.h"
+#include "Course.h"
 using namespace std;
 
 class Student : virtual public SSUPerson

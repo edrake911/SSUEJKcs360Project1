@@ -24,4 +24,4 @@ class Athlete : public Student
 };
 
 
-#endif ATLETE_H
+#endif 

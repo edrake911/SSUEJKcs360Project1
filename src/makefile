@@ -1,5 +1,5 @@
 P1.out: SSUPerson.o Student.o Athlete.o Employee.o Staff.o StudentEmployee.o Faculty.o Course.o main.o
-	g++ Student.o Athlete.o Employee.o Staff.o StudentEmployee.o Faculty.o Course.o main.o -o P1.out 
+	g++ SSUPerson.o Student.o Athlete.o Employee.o Staff.o StudentEmployee.o Faculty.o Course.o main.o -o P1.out 
 	mv *.o ../bin/.
 	mv *.out ../bin/.
 
@@ -25,10 +25,10 @@ StudentEmployee.o: StudentEmployee.h StudentEmployee.cpp
 	g++ StudentEmployee.cpp -c -o StudentEmployee.o
 
 
-Faculty.o: Course.o Faculty.h Faculty.cpp
-	g++ Course.o Faculty.cpp Course.o -c -o Faculty.o
+Faculty.o: Faculty.h Faculty.cpp
+	g++ Faculty.cpp -c -o Faculty.o
 
-Course.o: Course.h Course.cpp
+Course.o: Course.h Course.cpp Faculty.o
 	g++ Course.cpp -c -o Course.o
 
 run: P1.out
