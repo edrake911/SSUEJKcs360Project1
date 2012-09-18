@@ -1,7 +1,7 @@
 #ifndef SSUPERSON_H
 #define	SSUPERSON_H
 
-##define DEBUG 0
+#define DEBUG 0
 #define debug if (DEBUG) cout
 
 #include <string>
@@ -13,7 +13,7 @@ class SSUPerson
 	public:
 		SSUPerson();
 		~SSUPerson();
-		SSUPerson(const SSUPerson & P)
+		SSUPerson(const SSUPerson & P);
 		
 	
 	protected:
@@ -24,5 +24,4 @@ class SSUPerson
 	private:
 };
 
-
-#endif SSUPERSON_H
+#endif
