@@ -1,4 +1,2 @@
 #include "StudentEmployee.h"
-StudentEmployee::StudentEmployee(){
-	
-}
+int StudentEmployee::maxHours(){}

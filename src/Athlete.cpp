@@ -1,4 +1,4 @@
 #include "Athlete.h"
-Athlete::Athlete(){
 
-}
+string Athlete::sport(){}
+float Athlete::scholarship(){}

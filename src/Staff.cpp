@@ -1,4 +1,3 @@
 #include "Staff.h"
-Staff::Staff(){
-
-}
+int Staff::hours(){}
+Employee Staff::supervisor(){}

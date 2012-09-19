@@ -1,4 +1,5 @@
 #include "Employee.h"
-Employee::Employee(){
-
-}
+string Employee::department(){}
+int Employee::years(){}
+float Employee::salary(){}
+string Employee::title(){}

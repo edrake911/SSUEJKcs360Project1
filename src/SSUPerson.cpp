@@ -1,4 +1,4 @@
 #include "SSUPerson.h"
-SSUPerson::SSUPerson(){
-
-}
+string SSUPerson::name(){}
+int SSUPerson::ID(){}
+string SSUPerson::eMail(){}
